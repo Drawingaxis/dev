@@ -10,3 +10,31 @@
 	formId: "774de13a-5c79-4f0a-ae64-0b387f89dc94"
 });
 </script>
+
+
+
+<p id="demo"></p>
+
+<script>
+var xmlhttp = new XMLHttpRequest();
+var demo = document.getElementById("demo");
+
+xmlhttp.onreadystatechange = function() {
+  if (this.readyState == 4 && this.status == 200) {
+    var myObj = JSON.parse(this.responseText);
+   
+    var names = myObj.feed.entry[0].gsx$name.$t;
+    var arrayLenght = myObj.feed.entry.length;
+    
+
+    for(let index in names){
+        console.log(index);
+        demo.innerHTML += myObj.feed.entry[index].gsx$name.$t + "<br>";
+    }
+    
+  }
+};
+xmlhttp.open("GET", "https://spreadsheets.google.com/feeds/list/1BGLeynQABMHmKafPWu0nJugQRy3GNMNx_iY4O6FUsio/od6/public/values?alt=json", true);
+xmlhttp.send();
+</script>
+
