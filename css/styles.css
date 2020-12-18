@@ -1,0 +1,55 @@
+.bg{
+   background-color: #16282b; 
+}
+.holder{
+    margin: auto;
+    max-width: 1080px;
+    text-align: center;
+    padding-top: 50px;
+}
+#flag,
+.start h1{
+    font-family: 'Lobster', cursive;
+}
+#flag{
+    color: #cf3309;
+    font-size: 70px;
+    
+}
+a#start{
+    display: block;
+    text-decoration: none;
+    margin-top: 60px;
+    border: #3b4a4c dotted thin;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 50px;
+}
+.start h1{
+    font-size: 80px;
+    color: #fff;
+    margin: 0px;
+    
+}
+.start p{
+    color: #fff;
+    margin: 0px;
+    font-size: 14px;
+    letter-spacing: 4px;
+    padding-top: 10px;
+   
+}
+.players{
+    padding-top: 75px;
+    display: flex;
+    margin: auto;
+    max-width: 700px;
+   
+}
+.playerOne,
+.playerTwo{
+    width: 30%;
+    margin: auto;
+    color: #fff;
+}
